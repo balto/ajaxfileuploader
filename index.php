@@ -1,14 +1,10 @@
 <?php
     require_once 'config.php';
-    require_once 'src/foundationphp/UploadFile.php';
-use foundationphp\UploadFile;
-
+    require_once 'src/UploadFile.php';
 
     $maxfiles   = ini_get('max_file_uploads');
     $postmax    = UploadFile::convertToBytes(ini_get('post_max_size'));
     $displaymax = UploadFile::convertFromBytes($postmax);
-
-
 
 ?>
 
